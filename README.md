@@ -37,6 +37,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Creating a Reusable, Configurable Component
+* Identify the JSX that appears to be duplicated.
+* What is the purpose of that block of JSX? Think of a descriptive name of what it does.
+* Create a new file to house this component - it should have the same name as the component.
+* Create a new component in the new file, paste the JSX into it.
+* Make the component configurable by using React's 'props' system.
+
+## Deployment
+* [Deployment - Create React App](https://facebook.github.io/create-react-app/docs/deployment#firebase-https-firebasegooglecom)
+
+## Props
+* Systems for passing data from a parent component to a child component.
+* Goal is to customize or configure child component.
+### Providing Props from Parent to Child
+Structure:
+* <CommentDetail author(Name of the prop) = "Sam"(value of the prop) />
+
+## React-Router
+* [React-Router](https://reacttraining.com/react-router/web/example/basic)
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

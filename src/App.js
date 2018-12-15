@@ -47,7 +47,7 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Dialogflow Chat Window
-            {Blog}
+            <Blog />
           </a>
         </header>
         <div>{Blog}</div>
