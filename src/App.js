@@ -47,10 +47,9 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Dialogflow Chat Window
-            <Blog />
           </a>
         </header>
-        <div>{Blog}</div>
+        <div><Blog /></div>
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/">Crowdart Chatbot</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />

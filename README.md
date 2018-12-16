@@ -38,12 +38,17 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Creating a Reusable, Configurable Component
+#### A component is a Function or Class that produces HTML to show the user (using JSX) and handles feedback from the user (using event handlers).
 * Identify the JSX that appears to be duplicated.
 * What is the purpose of that block of JSX? Think of a descriptive name of what it does.
 * Create a new file to house this component - it should have the same name as the component.
 * Create a new component in the new file, paste the JSX into it.
 * Make the component configurable by using React's 'props' system.
+### Functional Components
+* Good for simple content.
 
+### Class Components
+* Good for all content
 ## Deployment
 * [Deployment - Create React App](https://facebook.github.io/create-react-app/docs/deployment#firebase-https-firebasegooglecom)
 
