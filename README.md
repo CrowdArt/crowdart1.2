@@ -75,6 +75,12 @@ Structure:
 ## React-Router
 * [React-Router](https://reacttraining.com/react-router/web/example/basic)
 
+## State
+
+## super()
+* To make sure that the parents React.Components constructor function gets called we call super() 
+* super() is a reference to parents constructor function
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
