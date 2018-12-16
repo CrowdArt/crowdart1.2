@@ -72,6 +72,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 Structure:
 * <CommentDetail author(Name of the prop) = "Sam"(value of the prop) />
 
+## State
+#### Rules of State:
+* Only usable with class components
+* 'State' is a JS object that contains data relevant to a component
+* Updating 'State' on a component causes the component to (almost) instantly rerender
+* State must be initialized when a component is created.
+* State can only be updated using the function 'setState'
+
 ## React-Router
 * [React-Router](https://reacttraining.com/react-router/web/example/basic)
 
