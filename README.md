@@ -72,7 +72,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 Structure:
 * <CommentDetail author(Name of the prop) = "Sam"(value of the prop) />
 
-## State
 #### Rules of State:
 * Only usable with class components
 * 'State' is a JS object that contains data relevant to a component
