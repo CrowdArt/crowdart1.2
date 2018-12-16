@@ -49,6 +49,19 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### Class Components
 * Good for all content
+
+#### Geolocation API Component
+* JS file loaded by browser
+* App component gets created
+* We call geolocation service
+* App returns JSX, gets rendered to page as HTML
+* We get result of geolocating
+* Tell the component to rerender itself with this new information
+
+#### Rules of Class Components
+* Must be a Javascript class
+* Must extend (subclass) React.Component
+* Must define a 'render' method that returns some amount of JSX
 ## Deployment
 * [Deployment - Create React App](https://facebook.github.io/create-react-app/docs/deployment#firebase-https-firebasegooglecom)
 

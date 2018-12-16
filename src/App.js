@@ -15,6 +15,7 @@ import {
 import logo from './logo.svg';
 import './App.css';
 import Blog from './Blog';
+import Season from './season/Season';
 
 class App extends Component {
   constructor(props) {
@@ -50,6 +51,7 @@ class App extends Component {
           </a>
         </header>
         <div><Blog /></div>
+        <div><Season /></div>
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/">Crowdart Chatbot</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
