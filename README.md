@@ -81,6 +81,14 @@ Structure:
 
 ## React-Router
 * [React-Router](https://reacttraining.com/react-router/web/example/basic)
+### Routing steps:
+* User wants to navigate to another step in the app
+* User clicks a 'Link' tag
+* React Router prevents the browser from navigating to the new page and fetching new index.html file
+* URL still changes
+* 'History' object sees updates URL, takes URL and sends it to BrowserRouter
+* BrowserRouter communicates the URL to Route components
+* Route components rerender to show new set of components
 
 ## State
 
@@ -89,6 +97,21 @@ Structure:
 * super() is a reference to parents constructor function
 
 ## Component Lifecycle
+* Constructor
+* render (this method is not optional)
+* componentDidMount - content visible on screen
+* componentDidUpdate - sit and wait for updates
+* componentWillMount - sit and wait until this component is no longer shown
+
+```javascript
+componentDidMount() {
+    console.log('My component was rendered to the screen');
+}
+
+componentDidUpdate() {
+    console.log('My component was just updated - it rendered')
+}
+```
 
 ## Learn More
 
@@ -113,6 +136,16 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Google Cloud
 * [Quickstart for Node.js in the App Engine Standard Environment](https://cloud.google.com/appengine/docs/standard/nodejs/quickstart?authuser=1)
 * [GCP Console](https://console.cloud.google.com/appengine?project=reactapp&authuser=1&organizationId=935263147482)
+* [gapi Methods and Classes](https://developers.google.com/api-client-library/javascript/reference/referencedocs)
+
+## Google Identity Platform
+### OAuth for Servers
+* Results in a token that a server can use to make requests on behalf of the user
+* Usually used when we have an app that needs to access user data when they are not logged in
+
+### OAuth for JS Browser Apps
+* Results in a token that a browser app can use to make requests on behalf of the user
+* Usually used when we have an app that needs to access user data when they are not logged in
 
 ## Javascript
 * [A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
