@@ -13,7 +13,7 @@ const Header = () => {
           <Link to="/" className="item">
             Crowdart
           </Link>
-          <div className="right menu">
+          <div className="right-menu">
             <Link to="/" className="item">
               Home
             </Link>

@@ -97,11 +97,11 @@ Structure:
 * super() is a reference to parents constructor function
 
 ## Component Lifecycle
-* Constructor
-* render (this method is not optional)
-* componentDidMount - content visible on screen
-* componentDidUpdate - sit and wait for updates
-* componentWillMount - sit and wait until this component is no longer shown
+* Constructor - good place to do one time setup
+* render (this method is not optional) - avoid doing anything besides returning JSX
+* componentDidMount - content visible on screen - good place to do data loading
+* componentDidUpdate - sit and wait for updates - good place to do more data loading when state/props change
+* componentWillMount - sit and wait until this component is no longer shown - good place to do clean-up (especially for non-react stuff)
 
 ```javascript
 componentDidMount() {
@@ -148,6 +148,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 * Usually used when we have an app that needs to access user data when they are not logged in
 
 `gapi.auth2.getAuthInstance().signOut()`
+gapi.auth2.getAuthInstance().signOut()
+gapi.auth2.getAuthInstance().isSignedIn.get()
+gapi.auth2.getAuthInstance().signIn
+gapi.auth2.getAuthInstance().signOut()
+gapi.auth2.getAuthInstance().signIn()
 
 
 ## Javascript

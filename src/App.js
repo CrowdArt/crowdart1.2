@@ -40,6 +40,7 @@ class App extends Component {
             <Route path="/streams/show" exact component={StreamShow} />
           </div>
         </BrowserRouter>
+        <Season />
       </div>
     );
   }

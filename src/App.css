@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: right;
+  color: white;
 }
 
 .App-logo {
@@ -18,6 +19,11 @@
   color: white;
 }
 
+.right-menu {
+  font: italic;
+  color: wheat;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -29,4 +35,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.item {
+  color: #61dafb;
+  font:  #61dafb;
 }
