@@ -147,6 +147,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 * Results in a token that a browser app can use to make requests on behalf of the user
 * Usually used when we have an app that needs to access user data when they are not logged in
 
+`gapi.auth2.getAuthInstance().signOut()`
+
+
 ## Javascript
 * [A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 
