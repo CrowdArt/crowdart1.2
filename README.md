@@ -65,9 +65,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Deployment
 * [Deployment - Create React App](https://facebook.github.io/create-react-app/docs/deployment#firebase-https-firebasegooglecom)
 
+## JSX
+* {} --> represents JSX interlopation 
+
 ## Props
 * Systems for passing data from a parent component to a child component.
 * Goal is to customize or configure child component.
+* Anytime that we pass a prop to a functional component it is going to show up inside of an object that is the first argument to that functional component.
 ### Providing Props from Parent to Child
 Structure:
 * <CommentDetail author(Name of the prop) = "Sam"(value of the prop) />
@@ -91,10 +95,28 @@ Structure:
 * Route components rerender to show new set of components
 
 ## State
+```javascript
+constructor(props) {
+        super(props);
 
+        //this is the only time we do direct assignment to this.state for state object
+        //this.state is a property
+        //other then initilizing the state object never do a direct assignment to it
+        // when we intializing the state object inside the constructor function you can do a direct assignment
+        this.state = { lat: null, errorMessage: '' };
+    }
+```
 ## super()
 * To make sure that the parents React.Components constructor function gets called we call super() 
 * super() is a reference to parents constructor function
+
+## Terniary Expressions in Javascript
+* i.e:
+    ```javascript
+    lat > 0 ? 'summer' 'winter'
+
+    const icon = season === 'winter' ? 'snowflake' : 'sun';
+    ```
 
 ## Component Lifecycle
 * Constructor - good place to do one time setup
@@ -153,7 +175,7 @@ gapi.auth2.getAuthInstance().isSignedIn.get()
 gapi.auth2.getAuthInstance().signIn
 gapi.auth2.getAuthInstance().signOut()
 gapi.auth2.getAuthInstance().signIn()
-
+new Date().getMont()
 
 ## Javascript
 * [A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)

@@ -5,32 +5,29 @@ import logo from './worldclassbot.png';
 import './../../App.css';
 import GoogleAuth from './../GoogleAuth';
 
-
 const Header = () => {
-    return(
-        <div className="App">
-        <div className="ui secondary pointing menu">
+  return (
+    <div className="App-header">
+      <div className="ui secondary pointing menu">
+        <Link to="/" className="item">
+          Crowdart
+        </Link>
+        <div className="right-menu">
           <Link to="/" className="item">
-            Crowdart
+            Home
           </Link>
-          <div className="right-menu">
-            <Link to="/" className="item">
-              Home
-            </Link>
-            <GoogleAuth />
-          </div>
+          <GoogleAuth />
         </div>
-            <img src={logo} className="App-logo" alt="Vuk" />
-          <a
-            className="App-link"
-            href="https://bot.dialogflow.com/65a60d57-1c9b-4bc5-aee2-d9970188b0d4"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            
-          </a>
-        </div>
-    )
-}
+      </div>
+      <img src={logo} className="App-logo" alt="Vuk" />
+      <a
+        className="App-link"
+        href="https://bot.dialogflow.com/65a60d57-1c9b-4bc5-aee2-d9970188b0d4"
+        target="_blank"
+        rel="noopener noreferrer"
+      />
+    </div>
+  );
+};
 
 export default Header;
